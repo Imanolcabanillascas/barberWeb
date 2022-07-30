@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Imanol_cab</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-dark fs-4" id="logo" href="#">Barber_shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link  fw-bold fs-5 " aria-current="page" id="barra_items" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 " id="barra_items" href="#Section_cortes">Cortes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 " id="barra_items" href="#Section_nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5 " id="barra_items" href="#Section_contacto">Contacto</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid" id="bg_title">
+
+    <div class="row align-items-center justify-content-center">
+      <div class="col-auto text-center ">
+        <p class="text-light" id="title_first">The Barber</p>
+      </div>
+
+      <div class="col-auto">
+        <div class="card align-items-center " id="tarjeta">
+          <div class="card-body text-center justify-content-center">
+            <p class="fs-2 fw-bold mt-2 ">5% de Dscto. los Lunes</p>
+            <button type="button" class="btn btn-outline-dark">Consultar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="container text-center mt-4 mb-4 fs-4 fw-bold text-uppercase" id="Section_cortes">Muchos estilos</div>
+    <div class="row align-items-center justify-content-center">
+      <div class=" col-auto m-1" class="contenedor_img">
+        <img src="img/img01.png" class="img_barber">
+
+        <p class="text-light text-center bg-dark">Fade</p>
+      </div>
+      <div class="col-auto mt-1" class="contenedor_img">
+        <img src="img/img02.png" class="img_barber">
+        <p class="text-light text-center bg-dark">Clásico</p>
+      </div>
+      <div class="col-auto mt-1" class="contenedor_img">
+        <img src="img/img03.png" class="img_barber">
+        <p class="text-light text-center bg-dark">Low Fade</p>
+      </div>
+      <div class="col-auto mt-1" class="contenedor_img">
+        <img src="img/img04.png" class="img_barber">
+        <p class="text-light text-center bg-dark">Tamaño 0</p>
+      </div>
+      <div class="col-auto mt-1" class="contenedor_img">
+        <img src="img/img05.png" class="img_barber">
+        <p class="text-light text-center bg-dark">Tamaño 0</p>
+      </div>
+      <div class="col-auto mt-1" class="contenedor_img">
+        <img src="img/img06.png" class="img_barber">
+        <p class="text-light text-center bg-dark">Tamaño 0</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="Section_nosotros">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4 align-items-center justify-content-center bg-dark">
+        <div class="col-auto text-center  text-light m-4" id="icon_barber">
+          <i class="bi bi-bookmark-star-fill"></i>
+          <p class="fw-bold fs-4 text-uppercase">servicio de calidad</p>
+        </div>
+        <div class="col-auto text-center m-4 text-light" id="icon_barber">
+          <i class="bi bi-valentine2"></i>
+          <p class="fw-bold fs-4 text-uppercase">el mejor estilo</p>
+        </div>
+        <div class="col-auto text-center m-4 text-light" id="icon_barber">
+          <i class="bi bi-watch"></i>
+          <p class="fw-bold fs-4 text-uppercase">justo a tiempo</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="Section_contacto">
+    <div class="container-fluid">
+      <div class="row m-3 align-items-center justify-content-center">
+        <div class="col col-sm-12  col-md-12 col-lg-3 col-xl-3 col-xxl-3 text-center">
+          <h5>La mejor barbería.</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a class="text-dark" aria-current="page" href="#">Inicio</a></li>
+            <li class="list-group-item"><a class="text-dark" href="#Section_cortes">Cortes</a></li>
+            <li class="list-group-item"><a class="text-dark" href="#Section_nosotros">Nosotros</a></li>
+
+          </ul>
+        </div>
+        <div class="col col-sm-12 col-lg-6 col-xl-6 col-xxl-6text-center">
+          <h4>
+            "Nuestros cortes son de acuerdo al estilo de cada cliente, siempre con los cortes mas actualizados"
+          </h4>
+        </div>
+        <div class="col col-sm-12  col-md-12 col-lg-3 col-xl-3 col-xxl-3 text-center" id="icons_footer">
+          <h5>Síguenos en nuestras redes sociales.</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a class="text-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+            <li class="list-group-item"><a class="text-dark" href="#"><i class="bi bi-whatsapp"></i></a></li>
+            <li class="list-group-item"><a class="text-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center bg-dark ">
+        <div class="col-auto text-center text-light mt-3 mb-3">
+          <h6><a class="text-light" href="https://imanolcab.netlify.app/">Imanolcab</a> &#169 Derechos reservados 2022
+          </h6>
+        </div>
+
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
