@@ -1,0 +1,25 @@
+---
+const cortes = [
+  { nombre: "Fade", img: "/img/img01.png" },
+  { nombre: "Clásico", img: "/img/img02.png" },
+  { nombre: "Low Fade", img: "/img/img03.png" },
+  { nombre: "Tamaño 0", img: "/img/img04.png" },
+  { nombre: "Navaja", img: "/img/img05.png" },
+  { nombre: "Texturizado", img: "/img/img06.png" },
+];
+---
+<section id="cortes" class="py-24 px-6 max-w-6xl mx-auto">
+  <p class="text-xs tracking-[0.4em] uppercase text-white/40 mb-2 text-center">Nuestros estilos</p>
+  <h2 class="font-['Cormorant_Garamond'] text-5xl text-center mb-16 font-light">Cortes</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {cortes.map(corte => (
+      <div class="relative overflow-hidden group aspect-square bg-white/5">
+        <img src={corte.img} alt={corte.nombre} class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-sm tracking-widest uppercase">{corte.nombre}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

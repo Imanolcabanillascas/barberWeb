@@ -1,0 +1,20 @@
+---
+const links = [
+  { label: "Inicio", href: "#" },
+  { label: "Cortes", href: "#cortes" },
+  { label: "Nosotros", href: "#nosotros" },
+  { label: "Contacto", href: "#contacto" },
+];
+---
+<nav class="fixed top-0 w-full z-50 px-8 py-5 flex justify-between items-center border-b border-white/10 backdrop-blur-md bg-black/30">
+  <span class="font-['Cormorant_Garamond'] text-2xl tracking-widest uppercase">Barber</span>
+  <ul class="flex gap-10 text-sm tracking-widest uppercase text-white/60">
+    {links.map(link => (
+      <li>
+        <a href={link.href} class="hover:text-white transition-colors duration-300">
+          {link.label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
